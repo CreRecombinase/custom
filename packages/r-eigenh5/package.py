@@ -39,7 +39,7 @@ class REigenh5(RPackage):
     depends_on('r-rcpp@1.0.3:',type=('build','run'))
     depends_on('r-rcppeigen@0.3.3.7.0:',type=('build','run'))
     depends_on('r-bh@1.72.0-3:',type=('build','run'))
-    depends_on('r-dplyr@0.8.99:',type=('build','run'))
+    depends_on('r-dplyr@0.8.4:',type=('build','run'))
     depends_on('r-progress@1.2.2:',type=('build','run'))
     depends_on('r-tidyr@1.0.2:',type=('build','run'))
     depends_on('r-stringr@1.4.0:',type=('build','run'))
