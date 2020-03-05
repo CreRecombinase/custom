@@ -33,9 +33,9 @@ class REigenh5(RPackage):
     # FIXME: Add a list of GitHub accounts to
     # notify when the package is updated.
     # maintainers = ['github_user1', 'github_user2']
+    version('2.0.3',sha256='30203bad5f3f7562c92e672e368a65ed8633f6ff39c45f441d789a7d476aa6aa')
     version('master',  branch='master')
     version('2.0.2',sha256='56af487038fc7e9f29a47963fb8ae3067a66190d0e1d720a303e16ef77e0acdf')
-
     depends_on('r-rcpp@1.0.3:',type=('build','run'))
     depends_on('r-rcppeigen@0.3.3.7.0:',type=('build','run'))
     depends_on('r-bh@1.72.0-3:',type=('build','run'))
