@@ -38,5 +38,6 @@ class RSusierGit(RPackage):
     version('master',  branch='master')
     # FIXME: Add dependencies if required.
     depends_on('r-matrix', type=('build', 'run'))
+    depends_on('r-matrixstats', type=('build', 'run'))
     depends_on('r-expm', type=('build', 'run'))
     depends_on('r-wavethresh', type=('build', 'run'))
