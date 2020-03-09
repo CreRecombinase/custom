@@ -21,8 +21,8 @@
 from spack import *
 class RLifecycle(RPackage):
     'Manage the Life Cycle of your Package Functions'
-    homepage = "https://cloud.r-project.org/src/contrib/lifecycle_0.1.0.tar.gz"
-    url      = "https://cloud.r-project.org/src/contrib/lifecycle_0.1.0.tar.gz"
-    version('0.1.0', md5='a039f080eb1dc67a40ce92ddced20cac')
+    homepage = "https://cloud.r-project.org/src/contrib/lifecycle_0.2.0.tar.gz"
+    url      = "https://cloud.r-project.org/src/contrib/lifecycle_0.2.0.tar.gz"
+    version('0.2.0', md5='42f1d553553ad8f092a20817a3077a6f')
     depends_on('r-glue@1.3.1:', type=('build', 'run'))
-    depends_on('r-rlang@0.4.4:', type=('build', 'run'))
+    depends_on('r-rlang@0.4.5:', type=('build', 'run'))
