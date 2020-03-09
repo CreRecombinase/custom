@@ -51,7 +51,6 @@ class REigenh5(RPackage):
     depends_on('r-rcpp@1.0.3:',type=('build','run'))
     depends_on('r-rcppeigen@0.3.3.7.0:',type=('build','run'))
     depends_on('r-rcppprogress@0.4.1:',type=('build','run'))
-    depends_on('r-testthat@2.3.1:',type=('build','run'))
     depends_on('r-bh@1.72.0-3:',type=('build','run'))
     depends_on('r-xtensor@0.11.1-0:',type=('build','run'))
     depends_on('r-testthat@2.3.1:',type=('build','run'))
