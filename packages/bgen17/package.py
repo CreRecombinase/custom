@@ -38,10 +38,10 @@ class Bgen17(CMakePackage):
     version('1.1.6', sha256='5e67ad3abb10af388a07eaefc754e6aab555625d8613339015513793c8aad7f7')
 
     # FIXME: Add dependencies if required.
-    depends_on('zstd')
-    depends_on('bzip2')
-    depends_on('sqlite+column_metadata')
-    depends_on('boost+filesystem+thread+date_time+timer+chrono+system')
+    # depends_on('zstd')
+    # depends_on('bzip2')
+    # depends_on('sqlite+column_metadata')
+    # depends_on('boost+filesystem+thread+date_time+timer+chrono+system')
 
 
     def cmake_args(self):
