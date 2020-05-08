@@ -31,12 +31,13 @@ class Plink(MakefilePackage):
     # depends_on('netlib-lapack', when='@1.9-beta6.10')
     def edit(self,spec,prefix):
         #print('prefix: '+prefix)
-        env['DESTDIR']=prefix
+        # env['DESTDIR']=prefix
+        env['PREFIX']=""
         env['ZLIB']=spec['zlib'].libs.ld_flags
-        env['CXXFLAGS'] = "-Wall -O2 -DDYNAMIC_ZLIB"
-        env['CFLAGS'] = "-Wall -O2 -DDYNAMIC_ZLIB"
+        env['CXXFLAGS'] = "-Wall -O2 -DDYNAMIC_ZLIB -mtune=native -march=native"
+        env['CFLAGS'] = "-Wall -O2 -DDYNAMIC_ZLIB -mtune=native -march=native"
         env['BLASFLAGS'] = spec['blas'].libs.ld_flags
-        # env['DESTDIR'] = prefix.bin
+        env['DESTDIR'] = prefix
 
     # def install(self, spec, prefix):
     #     mkdirp(prefix.bin)

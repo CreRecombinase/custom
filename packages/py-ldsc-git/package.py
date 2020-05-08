@@ -33,6 +33,7 @@ class PyLdscGit(PythonPackage):
     # FIXME: Add a list of GitHub accounts to
     # notify when the package is updated.
     # maintainers = ['CreRecombinase', 'github_user2']
+    version('1.0.5', commit='2c9c52c117cbe12116d2a67800ff31ddcb161298')
     version('1.0.4', commit='bb8eeb9fe76ab208f5d3de9b57eb03e3fc48572b')
     version('1.0.3', commit='5fe055aed5e862f6c27f23ea5f646a8665646ff1')
 
@@ -41,7 +42,6 @@ class PyLdscGit(PythonPackage):
     depends_on('python@:2.9', type=('build', 'run'))
     depends_on('py-setuptools', type='build')
     depends_on('py-pybedtools@0.6.9', type=('build', 'run'))
-    depends_on('py-numpy@1.12.1', type=('build', 'run'))
     depends_on('py-bitarray@0.8.1', type=('build', 'run'))
     depends_on('py-scipy@0.18.1', type=('build', 'run'))
     depends_on('py-pandas@0.20.0', type=('build', 'run'))
