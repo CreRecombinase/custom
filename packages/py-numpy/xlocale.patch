@@ -1,0 +1,13 @@
+diff --git a/numpy/core/src/multiarray/numpyos.c b/numpy/core/src/multiarray/numpyos.c
+index 0cfb9e6..36a0bb3 100644
+--- a/numpy/core/src/multiarray/numpyos.c
++++ b/numpy/core/src/multiarray/numpyos.c
+@@ -15,7 +15,7 @@
+ 
+ #ifdef HAVE_STRTOLD_L
+ #include <stdlib.h>
+-#include <xlocale.h>
++#include <locale.h>
+ #endif
+ 
+ 
