@@ -39,13 +39,14 @@ class Qctool(WafPackage):
     version('2.0.8',sha256='9e4090dba156539bcf2300affaee02ca2cbed70e4b07b0853ac8aa82331ebd1e')
 
     # FIXME: Add dependencies if required.
+    depends_on('python@:2.9', type=('build'))
     depends_on('zlib')
     depends_on('blas')
     depends_on('fossil')
     depends_on('lapack')
 
     # FIXME: Override configure_args(), build_args(),
-    
+
     @run_before('configure')
     def rename_waf(self):
-	os.rename('waf-1.5.18','waf')
+        os.rename('waf-1.5.18', 'waf')
