@@ -37,7 +37,7 @@ class Fossil(AutotoolsPackage):
     version('2.12.1', sha256='822326ffcfed3748edaf4cfd5ab45b23225dea840304f765d1d55d2e6c7d6603')
 
     # FIXME: Add dependencies if required.
-    # depends_on('foo')
+    depends_on('openssl')
 
     # def configure_args(self):
     #     # FIXME: Add arguments other than --prefix

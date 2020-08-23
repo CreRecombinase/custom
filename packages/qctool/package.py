@@ -21,7 +21,7 @@
 # ----------------------------------------------------------------------------
 
 from spack import *
-
+import os
 
 class Qctool(WafPackage):
     """A tool for quality control and analysis of gwas datasets."""
@@ -45,4 +45,7 @@ class Qctool(WafPackage):
     depends_on('lapack')
 
     # FIXME: Override configure_args(), build_args(),
-    # or install_args() if necessary.
+    
+    @run_before('configure')
+    def rename_waf(self):
+	os.rename('waf-1.5.18','waf')
