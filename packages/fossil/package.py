@@ -11,11 +11,11 @@
 # next to all the things you'll want to change. Once you've handled
 # them, you can save this file and test your package like this:
 #
-#     spack install qctool
+#     spack install fossil
 #
 # You can edit this file again by typing:
 #
-#     spack edit qctool
+#     spack edit fossil
 #
 # See the Spack documentation for more information on packaging.
 # ----------------------------------------------------------------------------
@@ -23,26 +23,24 @@
 from spack import *
 
 
-class Qctool(WafPackage):
-    """A tool for quality control and analysis of gwas datasets."""
+class Fossil(AutotoolsPackage):
+    """Fossil is a simple, high-reliability, distributed software configuration management."""
 
-    homepage = "https://enkre.net/cgi-bin/code/qctool/"
-    #    url = 'https://enkre.net/cgi-bin/code/qctool/tarball/ade6dc6afb/qctool-ade6dc6afb.tar.gz'
-    #url      =  "https://crerecombinase.keybase.pub/qctool_2_0_8.tar.gz"
-    url = "https://code.enkre.net/qctool/tarball/release/qctool.tgz"
+    # FIXME: Add a proper url for your package's homepage here.
+    homepage = "https://fossil-scm.org/home/doc/trunk/www/index.wiki"
+    url      = "https://fossil-scm.org/home/uv/fossil-src-2.12.1.tar.gz"
 
     # FIXME: Add a list of GitHub accounts to
     # notify when the package is updated.
     # maintainers = ['github_user1', 'github_user2']
 
-    # FIXME: Add proper versions and checksums here.
-    version('2.0.8',sha256='9e4090dba156539bcf2300affaee02ca2cbed70e4b07b0853ac8aa82331ebd1e')
+    version('2.12.1', sha256='822326ffcfed3748edaf4cfd5ab45b23225dea840304f765d1d55d2e6c7d6603')
 
     # FIXME: Add dependencies if required.
-    depends_on('zlib')
-    depends_on('blas')
-    depends_on('fossil')
-    depends_on('lapack')
+    # depends_on('foo')
 
-    # FIXME: Override configure_args(), build_args(),
-    # or install_args() if necessary.
+    # def configure_args(self):
+    #     # FIXME: Add arguments other than --prefix
+    #     # FIXME: If not needed delete this function
+    #     args = []
+    #     return args
