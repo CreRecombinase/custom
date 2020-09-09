@@ -34,3 +34,4 @@ class Snakemake(PythonPackage):
     depends_on('py-gitdb2', type=('build', 'run'))
     depends_on('py-smmap', type=('build', 'run'))
     depends_on('git@1.7.0:', type=('build', 'run'))
+    depends_on('py-pulp',when='@5.24.0:',type=('build', 'run'))
